@@ -1,0 +1,114 @@
+// POPINS AND MUKTA MALAR FONT-SIZE AND FOT-WEIGHT;
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@800&family=Poppins:wght@100;200;300;400;500;600;700;800;900;&family=Rubik:ital,wght@1,400;1,500&display=swap");
+$mukta: "Mukta Malar", sans-serif;
+$popins: "Poppins", sans-serif;
+$rubik: "Rubik", sans-serif;
+//END POPINS AND MUKTA MALAR FONT-SIZE AND FOT-WEIGHT;
+
+// WEB RESETS
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: $popins;
+// }
+// END WEB RESETS
+
+.webdesign {
+  color: rgb(19, 18, 18) !important;
+  font-family: $popins !important;
+  font-size: 25px !important;
+  font-weight: 900 !important;
+}
+
+@media only screen and (max-width: 506px) {
+  .webdesign {
+    color: rgb(19, 18, 18) !important;
+    font-family: $popins !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+  }
+  .contact-btn {
+    margin-top: 4px;
+  }
+}
+
+.nav--animate__tamil {
+  font-family: $mukta;
+  animation-name: colorChange;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  transition: 600ms;
+}
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.fs {
+  color: rgb(12, 12, 12) !important;
+  font-size: 13px;
+  font-family: $popins !important;
+  font-weight: 700 !important;
+  transition: 400ms;
+
+  &:hover {
+    color: blue !important;
+    background-color: rgb(248, 248, 248) !important;
+  }
+}
+.border-bottom {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+.contact-btn {
+  border: none;
+  outline: none;
+
+  border-radius: 18px !important;
+  background-color: rgb(61, 61, 190);
+
+  &:hover {
+    background-color: rgb(0, 0, 255);
+  }
+}
+.contact-text {
+  font-size: 13px;
+}
+.form-li {
+  padding: 5px;
+  font-size: 16px;
+  &:hover {
+    color: rgb(47, 47, 207) !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .navul {
+    padding-top: 20px;
+  }
+  .contact-text {
+    font-size: 10px;
+  }
+  .contact-btn {
+    padding-bottom: 10px;
+  }
+}
+// .dropdown {
+//   transition: 300ms;
+// }
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
